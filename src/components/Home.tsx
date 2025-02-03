@@ -8,7 +8,7 @@ const images = [
   "nithya2.jpg"
 ];
 
-const Home = () => {
+function Home() {
   const [currentImage, setCurrentImage] = React.useState(0);
   const typedRef = useRef<HTMLSpanElement>(null);
   const typed = useRef<Typed | null>(null);
@@ -83,22 +83,17 @@ const Home = () => {
               {images.map((src, index) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                    index === currentImage ? 'opacity-100' : 'opacity-0'
-                  }`}
+                  className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImage ? 'opacity-100' : 'opacity-0'}`}
                 >
                   <img
                     src={src}
                     alt={`Gallery image ${index + 1}`}
-                    className="object-cover w-full h-full"
-                  />
+                    className="object-cover w-full h-full" />
                   <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
                     {images.map((_, dotIndex) => (
                       <span
                         key={dotIndex}
-                        className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                          dotIndex === currentImage ? 'bg-white' : 'bg-white/50'
-                        }`}
+                        className={`w-3 h-3 rounded-full transition-colors duration-300 ${dotIndex === currentImage ? 'bg-white' : 'bg-white/50'}`}
                       ></span>
                     ))}
                   </div>
@@ -106,11 +101,11 @@ const Home = () => {
               ))}
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default Home;
