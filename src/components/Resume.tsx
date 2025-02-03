@@ -9,9 +9,9 @@ const Resume = () => {
         <div className="flex items-center space-x-4 mb-16 reveal-text">
           <h2 className="text-4xl md:text-6xl font-bold">Resume</h2>
           <a 
-            href="public\NithyaR_resume.pdf" // Update this path to your actual PDF file
+            href="public/NithyaR_resume.pdf" // Ensure this path is correct
             download="Nithya_Resume.pdf"
-            className="text-white hover:text-gray-400 transition-all"
+            className="text-white hover:text-gray-400 transition-all flex items-center"
             title="Download Resume"
           >
             <Download size={32} />
