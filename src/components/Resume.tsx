@@ -9,7 +9,7 @@ const Resume = () => {
         <div className="flex items-center space-x-4 mb-16 reveal-text">
           <h2 className="text-4xl md:text-6xl font-bold">Resume</h2>
           <a 
-            href="public/NithyaR_resume.pdf" // Ensure this path is correct
+            href="NithyaR_resume.pdf" // Ensure this path is correct
             download="Nithya_Resume.pdf"
             className="text-white hover:text-gray-400 transition-all flex items-center"
             title="Download Resume"
