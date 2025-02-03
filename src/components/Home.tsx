@@ -3,9 +3,9 @@ import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Typed from 'typed.js';
 
 const images = [
-  "src/assets/nithya.jpg",
-  "src/assets/nithya1.jpg",
-  "src/assets/nithya2.jpg"
+  "nithya.jpg",
+  "nithya1.jpg",
+  "nithya2.jpg"
 ];
 
 const Home = () => {

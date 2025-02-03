@@ -1,4 +1,4 @@
-import { Award, Briefcase, GraduationCap } from 'lucide-react';
+import { Award } from 'lucide-react';
 
 const milestones = [
   {

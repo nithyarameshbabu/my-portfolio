@@ -4,19 +4,19 @@ const projects = [
   {
     title: "IoT object recognition using Machine Learning",
     description: "A modern Iot project that uses machine learning to recognize objects",
-    image: "src/assets/IoT.png",
+    image: "IoT.png",
     tags: ["Python", "OpenCV", "Arduino IDE"],
   },
   {
     title: "Web Development for Company Website", 
     description: "A dynamic website for a company that showcases their services and products",
-    image: "src/assets/web port.png",
+    image: "web port.png",
     tags: ["Tailwind CSS", "React"],
   },
   {
     title: "User Interface Design for Mobile Apps and Web Apps",
     description: "interactive and user-friendly designs for mobile and web applications",
-    image: "src/assets/UI port.png",
+    image: "UI port.png",
     tags: ["Figma", "Canva"],
   }
 ];
