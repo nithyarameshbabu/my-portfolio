@@ -4,6 +4,19 @@ import { Menu, X } from 'lucide-react';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
+  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    event.preventDefault(); // Prevent default link behavior
+    setIsMenuOpen(false); 
+
+    setTimeout(() => {
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 300); // Adding slight delay
+  };
+
   return (
     <nav className="fixed w-full z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4">
@@ -31,12 +44,12 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-black/95 border-b border-white/10">
           <div className="px-4 py-4 space-y-4">
-            <a href="#home" className="block nav-link">HOME</a>
-            <a href="#about" className="block nav-link">ABOUT</a>
-            <a href="#milestones" className="block nav-link">MILESTONES</a>
-            <a href="#works" className="block nav-link">WORKS</a>
-            <a href="#resume" className="block nav-link">RESUME</a>
-            <a href="#contact" className="block nav-link">CONTACT</a>
+            <a href="#home" className="block nav-link" onClick={(e) => handleNavClick(e, "#home")}>HOME</a>
+            <a href="#about" className="block nav-link" onClick={(e) => handleNavClick(e, "#about")}>ABOUT</a>
+            <a href="#milestones" className="block nav-link" onClick={(e) => handleNavClick(e, "#milestones")}>MILESTONES</a>
+            <a href="#works" className="block nav-link" onClick={(e) => handleNavClick(e, "#works")}>WORKS</a>
+            <a href="#resume" className="block nav-link" onClick={(e) => handleNavClick(e, "#resume")}>RESUME</a>
+            <a href="#contact" className="block nav-link" onClick={(e) => handleNavClick(e, "#contact")}>CONTACT</a>
           </div>
         </div>
       )}
