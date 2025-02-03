@@ -1,10 +1,22 @@
-import { GraduationCap, Award } from 'lucide-react';
+import { GraduationCap, Award, Download } from 'lucide-react';
 
 const Resume = () => {
   return (
     <section id="resume" className="min-h-screen bg-gradient-to-b from-gray-900 to-black py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-6xl font-bold mb-16 reveal-text">Resume</h2>
+        
+        {/* Resume Title with Download Icon */}
+        <div className="flex items-center space-x-4 mb-16 reveal-text">
+          <h2 className="text-4xl md:text-6xl font-bold">Resume</h2>
+          <a 
+            href="public\NithyaR_resume.pdf" // Update this path to your actual PDF file
+            download="Nithya_Resume.pdf"
+            className="text-white hover:text-gray-400 transition-all"
+            title="Download Resume"
+          >
+            <Download size={32} />
+          </a>
+        </div>
         
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-12 reveal-slide">
