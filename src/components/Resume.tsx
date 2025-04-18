@@ -1,16 +1,13 @@
 import { GraduationCap, Award, Download } from 'lucide-react';
 
 const Resume = () => {
-  const resumeUrl = "NithyaR_resume.pdf"; // Update this path to your actual PDF file
-
-  const handleDownload = () => {
+  function handleDownload(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
+    event.preventDefault();
     const link = document.createElement('a');
-    link.href = resumeUrl;
-    link.download = 'Nithya_Resume.pdf'; // Specify the file name for download
-    document.body.appendChild(link);
+    link.href = 'public\NithyaR_resume.pdf'; // Replace with the actual path to your resume file
+    link.download = 'Resume.pdf';
     link.click();
-    document.body.removeChild(link);
-  };
+  }
 
   return (
     <section id="resume" className="min-h-screen bg-gradient-to-b from-gray-900 to-black py-20 px-4">
