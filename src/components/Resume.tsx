@@ -4,7 +4,7 @@ const Resume = () => {
   function handleDownload(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
     event.preventDefault();
     const link = document.createElement('a');
-    link.href = 'public\NithyaR_resume.pdf'; // Replace with the actual path to your resume file
+    link.href = 'public\Resume.pdf'; // Replace with the actual path to your resume file
     link.download = 'Resume.pdf';
     link.click();
   }
