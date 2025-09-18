@@ -4,7 +4,7 @@ const Resume = () => {
   function handleDownload(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
     event.preventDefault();
     const link = document.createElement('a');
-    link.href = 'public\Nithya R - Resume.pdf'; 
+    link.href = '${import.meta.env.BASE_URL}Nithya R - Resume.pdf';
     link.download = 'Resume.pdf';
     link.click();
   }
