@@ -4,7 +4,7 @@ const Resume = () => {
   function handleDownload(event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
     event.preventDefault();
     const link = document.createElement('a');
-    link.href = 'public\NithyaR.pdf'; // Replace with the actual path to your resume file
+    link.href = 'public\Nithya R - Resume.pdf'; 
     link.download = 'Resume.pdf';
     link.click();
   }
@@ -80,15 +80,7 @@ const Resume = () => {
                 name: "UI/UX Design",
                 percent: 85,
                 color: "bg-pink-500"
-              }, {
-                name: "Python",
-                percent: 70,
-                color: "bg-yellow-500"
-              }, {
-                name: "Machine Learning",
-                percent: 60,
-                color: "bg-red-500"
-              }, {
+              },{
                 name: "Arduino C++",
                 percent: 50,
                 color: "bg-orange-500"

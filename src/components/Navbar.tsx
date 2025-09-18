@@ -9,7 +9,7 @@ const Navbar = () => {
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
 
-  const handleNavClick = (event, targetId) => {
+  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
     event.preventDefault();
     setIsMenuOpen(false); // Close menu on click
 
